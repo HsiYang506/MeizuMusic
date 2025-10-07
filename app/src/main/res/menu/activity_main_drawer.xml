@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_music"
+            android:icon="@drawable/ic_music_note"
+            android:title="@string/menu_music" />
+        <item
+            android:id="@+id/nav_album"
+            android:icon="@drawable/ic_album"
+            android:title="@string/menu_album" />
+        <item
+            android:id="@+id/nav_artist"
+            android:icon="@drawable/ic_artist"
+            android:title="@string/menu_artist" />
+        <item
+            android:id="@+id/nav_folder"
+            android:icon="@drawable/ic_folder"
+            android:title="@string/menu_folder" />
+    </group>
+
+    <item
+        android:id="@+id/divider"
+        android:enabled="false"
+        android:icon="@android:color/transparent"
+        android:title="" />
+
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_statistics"
+            android:title="@string/menu_statistics"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_settings"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_about" />
+
+    </group>
+
+
+</menu>

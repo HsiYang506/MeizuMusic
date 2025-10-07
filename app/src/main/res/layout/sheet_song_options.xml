@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/album_art"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text="歌曲标题" />
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/option_add_to_playlist"
+        layout="@layout/item_menu_option" />
+    <include
+        android:id="@+id/option_play_next"
+        layout="@layout/item_menu_option" />
+    <include
+        android:id="@+id/option_share"
+        layout="@layout/item_menu_option" />
+    <include
+        android:id="@+id/option_info"
+        layout="@layout/item_menu_option" />
+    <include
+        android:id="@+id/option_delete"
+        layout="@layout/item_menu_option" />
+
+</LinearLayout>
